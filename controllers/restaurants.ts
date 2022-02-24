@@ -46,7 +46,6 @@ router.get(
   "/close",
   async (req: Request, res: Response, next: NextFunction) => {
     const { postalcode, lon, lat, search } = req.query;
-    console.log(lon, lat);
 
     if (!postalcode && !lon && !lat) {
       throw new CustomError("Invalid Parameters");
