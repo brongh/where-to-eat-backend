@@ -84,7 +84,6 @@ router.get(
             }
           });
           if (pass) {
-            console.log(item.restaurant);
             return item.restaurant;
           }
           return;
@@ -204,5 +203,5 @@ router.get("/", async (req: Request, res: Response, next: NextFunction) => {
 
   res.send(searchFood);
 });
-
+//test
 export default router;
