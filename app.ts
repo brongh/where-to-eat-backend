@@ -47,7 +47,7 @@ const startServer = async () => {
 
   app.use(router);
 
-  server.listen(port, () => {
+  server.listen(process.env.PORT || port, () => {
     console.log(
       "######################## \n Listening on port: ",
       port,
